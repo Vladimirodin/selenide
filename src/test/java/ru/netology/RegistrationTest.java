@@ -24,7 +24,7 @@ public class RegistrationTest {
     void setUp() {
         open("http://localhost:9999/");
         Configuration.holdBrowserOpen = true;
-        $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
+        Configuration.startMaximized = true;
     }
 
     @Test
